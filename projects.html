@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="projects.css" type="text/css">
+<meta charset="utf-8">
+<title>Проeкти</title>
+</head>
+<body>
+
+<h2 align="center">Моите проекти:</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'RadoslavM')" id="defaultOpen">RadoslavM</button>
+  <button class="tablinks" onclick="openCity(event, 'NzBrato')">NzBrato</button>
+  <button class="tablinks" onclick="openCity(event, 'SocialMedias')">SocialMedias</button>
+</div>
+
+<div id="RadoslavM" class="tabcontent">
+  <h3>RadoslavM</h3>
+  <p>Вероятно идваш от този сайт, но нека все пак да напишем нещо за него. Това е първият ми сайт който е нещо като портфолио или личен блог. От този сайт освен да научиш по нещичко за мене, може да разбереш как да научиш html и css. За да не седи толкова празен сайта ще можете да откриете полезни линкове за други сайтове. Линк за сайта: <a href="radoslavmitrashkov.eu5.org">тук</a></p>
+  <p class="pht">Снимки на сайта (нарочно не съм сложил целият текст на темата "Как да научиш HTML & CSS". Все пак трябва да има причина да посетиш сайта.</p>
+  <img src="1.png" class="png1">
+  <img src="2.png" class="png2">
+  <img src="3.png" class="png3">
+</div>
+
+<div id="NzBrato" class="tabcontent">
+  <h3>NzBrato</h3>
+  <p>Този сайт е направен за telegram група. В него можеш да откриеш само кратка информация за групата и да се присъединиш към нея. Все пак говорим за сайт който е за група :д. Линк за него все още няма, тъй като не е пуснат + не е довършен.</p> 
+</div>
+
+<div id="SocialMedias" class="tabcontent">
+  <h3>SocialMedias</h3>
+  <p>Това е сайт наподобяващ така познатият ви "Linktree". От него можете да намерите връзки към моите социални мрежи. Линк за сайта няма, тъй като не е довършен.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
